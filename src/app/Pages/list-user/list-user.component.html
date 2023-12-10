@@ -1,0 +1,31 @@
+<div class="container mt-3">
+  <div class="input-group mb-3">
+    {{ value }}
+    <input
+      type="search"
+      [(ngModel)]="value"
+      class="form-control rounded"
+      placeholder="Search"
+      aria-label="Search"
+      aria-describedby="search-addon"
+    />
+    <button type="button" class="btn btn-outline-primary">search</button>
+  </div>
+
+  <div class="container mt-3">
+    <div class="row">
+      <div
+        class="col-md-4"
+        *ngFor="let user of userDataList | filter : value; let i = index"
+      >
+        <app-user-data
+          [user]="user"
+          (removeUserEvent)="removeUser($event)"
+        ></app-user-data>
+      </div>
+      <div *ngIf="deleted" class="alert alert-danger" role="alert">
+        The data Was Deleted
+      </div>
+    </div>
+  </div>
+</div>

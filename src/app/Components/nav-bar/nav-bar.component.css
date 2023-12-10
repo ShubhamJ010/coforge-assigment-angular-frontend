@@ -1,0 +1,9 @@
+.active {
+  background-color: #363062;
+
+  border-radius: 10px;
+  padding: 1px;
+}
+.textActive {
+  color: #F5E8C7;
+}

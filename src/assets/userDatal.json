@@ -1,0 +1,30 @@
+[
+    {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "john@example.com",
+        "password": "password123",
+        "confirmPassword": "password123",
+        "gender": "Male",
+        "comments": "Sample comment",
+        "address": {
+            "city": "New York",
+            "streetNumber": "123 Main St",
+            "country": "USA"
+        }
+    },
+    {
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "email": "jane@example.com",
+        "password": "password456",
+        "confirmPassword": "password456",
+        "gender": "Female",
+        "comments": "Another sample comment",
+        "address": {
+            "city": "Los Angeles",
+            "streetNumber": "456 Elm St",
+            "country": "USA"
+        }
+    }
+]

@@ -1,0 +1,40 @@
+<nav
+  class="navbar navbar-expand-lg navbar-light"
+  style="border-radius: 50px; margin: 10px; background-color: #818FB4"
+>
+  <a
+    class="navbar-brand mx-3"
+    routerLink="/all"
+    style="
+      border-radius: 50px;
+      padding: 10px;
+      background-color: '007bff';
+      border: radius 10px;
+      padding: 1px;
+      color: #363062;
+    "
+    >Coforge Assignment</a
+  >
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item" [ngClass]="{ active: isActive('/add') }">
+        <a
+          [ngClass]="{ textActive: isActive('/add') }"
+          class="nav-link"
+          routerLink="/add"
+          style="padding: 10px"
+          >Add User</a
+        >
+      </li>
+      <li class="nav-item" [ngClass]="{ active: isActive('/all') }">
+        <a
+          [ngClass]="{ textActive: isActive('/all') }"
+          class="nav-link"
+          routerLink="/all"
+          style="padding: 10px"
+          >All Users</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
